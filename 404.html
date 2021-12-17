@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script>
+    const logoUrlChanger = setInterval(function() {
+    //Anchor above the logo image
+    const homeEls = document.getElementsByClassName("home-link");
+    if(homeEls.length > 0) {
+      const homeEl = homeEls[0];
+      homeEl.setAttribute("href", "https://pikatea.com");
+      homeEl.setAttribute("onclick", "document.location='https://pikatea.com';return false;");
+      clearInterval(logoUrlChanger);
+    }
+
+    //Actual logo image
+    const logoEls = document.getElementsByClassName("logo")
+    if(logoEls.length > 0) {
+      const logoEl = logoEls[0]
+      logoEl.setAttribute("onclick", "document.location='https://pikatea.com';return false;");
+      clearInterval(logoUrlChanger);
+    }
+    }, 1000) 
+
+  </script>
+    <meta name="description" content="Documentation for Pikatea products and software">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.0a001e07.css" as="style"><link rel="preload" href="/assets/js/app.475b00b8.js" as="script"><link rel="preload" href="/assets/js/7.b2728fe4.js" as="script"><link rel="prefetch" href="/assets/js/10.e99e362f.js"><link rel="prefetch" href="/assets/js/11.b9f25b22.js"><link rel="prefetch" href="/assets/js/12.ee2eed51.js"><link rel="prefetch" href="/assets/js/13.b9f8980a.js"><link rel="prefetch" href="/assets/js/14.3925d9a3.js"><link rel="prefetch" href="/assets/js/15.e991e7cd.js"><link rel="prefetch" href="/assets/js/16.c0530a8f.js"><link rel="prefetch" href="/assets/js/17.ba52a7ab.js"><link rel="prefetch" href="/assets/js/2.e600e183.js"><link rel="prefetch" href="/assets/js/3.e4f45ac2.js"><link rel="prefetch" href="/assets/js/4.ab196059.js"><link rel="prefetch" href="/assets/js/5.61dedc87.js"><link rel="prefetch" href="/assets/js/6.ab5d2915.js"><link rel="prefetch" href="/assets/js/8.f135b68d.js"><link rel="prefetch" href="/assets/js/9.120a4514.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0a001e07.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div class="theme-default-content"><h1>404</h1> <blockquote>There's nothing here.</blockquote> <a href="/" class="router-link-active">
+      Take me home.
+    </a></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.475b00b8.js" defer></script><script src="/assets/js/7.b2728fe4.js" defer></script>
+  </body>
+</html>
